@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+@function shadow ($color){
+    @return lighten($color, 60%)
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 0px 10px shadow(rgb(15, 15, 15));
+    padding-top: 20px;
+    padding-bottom: 10px;
+    img {
+        width: 50%;
+    }
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    background-color: #eaeaea;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .fa-map-marker-alt {
+        padding-right: 15px;
+        font-size: 17px;
+        color: #353535;
+    }
+    input {
+        border: none;
+        font-size: 16px;
+    }
+}
