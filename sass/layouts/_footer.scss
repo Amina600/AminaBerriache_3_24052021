@@ -1,0 +1,22 @@
+footer {
+    background: $bg_footer;
+    .container {
+        padding-top: 10px;
+        padding-bottom: 30px
+    }h1{
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.5em;
+        color: white;
+    }
+    li {
+        line-height: 1.8em;
+        color: $color-white;
+        .icon1_footer {
+            padding-right: 10px;
+
+        }.icon2_footer {
+            font-size: 0.8em;
+            padding-right: 8px;
+        }
+    }  
+}

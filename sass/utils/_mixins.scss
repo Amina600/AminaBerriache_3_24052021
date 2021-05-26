@@ -1,0 +1,15 @@
+@mixin btn-rose {
+    border: none;
+    height: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+    background: linear-gradient(175deg, $secondary, $primary);
+}
+
+@mixin box-rad-shad {
+    box-shadow: 2px 5px 5px #e6e6e6;
+    border-radius: 25px;
+}
