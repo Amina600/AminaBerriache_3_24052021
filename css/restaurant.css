@@ -1,0 +1,101 @@
+.fa-arrow-left {
+  font-size: 1.4em;
+  color: #353535;
+  position: absolute;
+  left: 29px;
+  bottom: 16px;
+}
+
+.img_restaurant {
+  width: 100%;
+  height: 220px;
+  z-index: 2;
+}
+
+.menu_restaurant {
+  padding: 0;
+  border-radius: 45px 45px 0px 0px;
+  z-index: 5;
+  position: relative;
+  background: #f6f6f6;
+  top: -70px;
+  margin-bottom: -70px;
+  padding-bottom: 70px;
+}
+.menu_restaurant menu {
+  padding: 0 45px 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0;
+}
+.menu_restaurant menu .title_Shrikhand {
+  font-size: 1.9em;
+  margin-bottom: 0;
+}
+
+.container h2 {
+  font-size: 1.1em;
+  font-weight: 300;
+  border-bottom: 3px solid #99E2D0;
+  width: 45px;
+  margin-top: 35px;
+}
+.container .item {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 2px 5px 5px #e6e6e6;
+  justify-content: space-between;
+  border-radius: 15px;
+  background: #fff;
+  margin-bottom: 20px;
+  padding-left: 16px;
+  transition: all 0.4s ease-in-out;
+}
+.container .item:hover {
+  box-shadow: 0 2px 8px rgba(85, 84, 84, 0.6);
+}
+.container .item h3 {
+  font-size: 1.25em;
+  margin-bottom: 5px;
+  margin-top: 3px;
+  font-weight: 500;
+}
+.container .item p {
+  font-size: 1em;
+  margin: 0;
+}
+.container .item .price {
+  position: absolute;
+  bottom: 10px;
+  right: 25px;
+}
+
+.btn {
+  border: none;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 25px;
+  display: block;
+  margin: auto;
+  color: #fff;
+  font-size: 1.2em;
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  margin-top: 35px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 50px;
+}
+.btn:hover {
+  box-shadow: 0 2px 8px rgba(31, 30, 30, 0.7);
+  background: linear-gradient(175deg, #ff88de, #9b63df);
+}
+
+/*# sourceMappingURL=restaurant.css.map */

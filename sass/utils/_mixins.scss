@@ -19,9 +19,16 @@
     }
 }
 
-@mixin box-rad-shad {
+@mixin operation {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    position: relative;
+    cursor: pointer;
+    
+}
+@mixin box-shadow {
     box-shadow: 2px 5px 5px #e6e6e6;
-    border-radius: 25px;
 }
 
 @mixin case-new {

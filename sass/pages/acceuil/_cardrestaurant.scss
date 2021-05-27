@@ -14,10 +14,11 @@
             margin-bottom: 30px;
             background: $color-white;
             overflow: hidden;
-            @include box-rad-shad();
+            border-radius: 25px;
             cursor: pointer;
-            transition: all 0.3s;
             position: relative;
+            @include box-shadow;
+            transition: all 0.3s;
             &:hover {
                 box-shadow: 0 2px 8px rgba(85, 84, 84, 0.6);
             }

@@ -7,15 +7,15 @@
         padding-bottom: 50px;
     }  
     .select {
-        display: flex;
-        align-items: center;
+        
         background-color: $color-light-grey;
         height: 70px;
         margin-bottom: 25px;
-        @include box-rad-shad();
-        position: relative;
-        cursor: pointer;
+        border-radius: 25px;
+        @include operation;
+        @include box-shadow;
         transition: all 0.4s ease-in-out;
+    
         &:hover  { 
             box-shadow: 0 2px 8px rgba(85, 84, 84, 0.6);
             background: lighten($primary, 35%);
