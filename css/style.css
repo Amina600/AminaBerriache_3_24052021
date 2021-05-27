@@ -204,7 +204,7 @@ header img {
 .all_restaurants a .card_restaurant p {
   line-height: 1.4em;
 }
-.all_restaurants a .card_restaurant .fa-heart {
+.all_restaurants a .card_restaurant .heart {
   font-size: 1.6em;
   padding-right: 10px;
 }
