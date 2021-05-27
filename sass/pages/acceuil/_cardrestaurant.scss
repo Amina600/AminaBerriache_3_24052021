@@ -4,34 +4,55 @@
 .all_restaurants {
     padding-top: 30px;
     padding-bottom: 30px;
-    .card_restaurant {
-        max-width: 100%;
-        height: 250px;
-        margin-bottom: 30px;
-        background: $color-white;
-        overflow: hidden;
-        @include box-rad-shad();
-        .picture_restaurant {
-            height: 170px;
-            width: 100%;
-            object-fit: cover;
-        } .subtitles {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            padding: 0px 10px;
+    a {
+        text-decoration: none;
+        color: black;
 
-        } .subtitle_1{
-            font-size: 1.2em;
+        .card_restaurant {
+            max-width: 100%;
+            height: 250px;
+            margin-bottom: 30px;
+            background: $color-white;
+            overflow: hidden;
+            @include box-rad-shad();
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+            &:hover {
+                box-shadow: 0 2px 8px rgba(85, 84, 84, 0.6);
+            }
+            .case-new {
+               @include case-new;
+            }
+            .picture_restaurant {
+                height: 170px;
+                width: 100%;
+                object-fit: cover;
+            } 
+            .subtitles {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                padding: 0px 15px;
 
-        }.subtitle_2{
-            font-size: 1em;
-        }p {
-            line-height: 1.4em;
+            } 
+            .subtitle_1{
+                font-size: 1.2em;
 
-        } .fa-heart {
-            font-size: 1.6em;
-            padding-right: 10px;
+            }
+            .subtitle_2{
+                font-size: 1em;
+            }
+            p {
+                line-height: 1.4em;
+
+            } 
+            .fa-heart {
+                font-size: 1.6em;
+                padding-right: 10px;  
+                
+            }
         }
     }
 }
+
