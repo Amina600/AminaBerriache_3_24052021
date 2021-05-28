@@ -114,9 +114,9 @@ header img {
   display: flex;
   align-items: center;
   height: 70px;
-  position: relative;
   cursor: pointer;
   box-shadow: 2px 5px 5px #e6e6e6;
+  position: relative;
   transition: all 0.4s ease-in-out;
 }
 .selection .select:hover {

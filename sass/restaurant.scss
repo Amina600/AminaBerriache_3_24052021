@@ -14,7 +14,6 @@
     height: 220px;
     object-fit: cover;
     z-index: 2;
-
 }
 .menu_restaurant {
     padding: 0;
@@ -48,7 +47,8 @@
         padding-bottom: 3px;
     
     }
-    .item {
+    .dishes {
+        max-width: 100%;
         @include operation;
         @include box-shadow;
         justify-content: space-between;
@@ -56,34 +56,76 @@
         background: $color-white;
         margin-bottom: 20px;
         padding-left: 16px;
+        position: relative;
         overflow: hidden;
         transition: all 0.8s ease-in-out;
+        .check {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $color-white;
+            width: 70px;
+            height: 70px;
+            background: $tertiary;
+            transition: all 0.8s ease-in-out;
+            transform: translateX(70px);
+            position: absolute;
+            right: 0;
+            font-size: 1.3em;
+            .fa-check-circle {
+                transform: rotate(1deg);
+                transition: all 0.8s ease-in-out;
+            }
+        }
+        .price {
+            margin-top: 27px;
+            margin-left: 0;
+            padding-right: 15px;
+            transition: all 0.8s ease-in-out;
+        
+        }
+        .dishes-name {
+            
+            h3 {
+                font-size: 1.1em;
+                margin-bottom: 5px;
+                margin-top: 3px;
+                font-weight: 500;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                
+                
+            }
+            p {
+                font-size: 0.95em;
+                margin: 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                
+                
+            }
+        }
         
         &:hover  { 
             box-shadow: 0 2px 8px rgba(85, 84, 84, 0.6);
-           
-        }
-        
-        
-        
-        h3 {
-            font-size: 1.1em;
-            margin-bottom: 5px;
-            margin-top: 3px;
-            font-weight: 500;
-        }
-        p {
-            font-size: 0.95em;
-            margin: 0;
-        }
-        .price {
-            position: absolute;
-            bottom: 10px;
-            right: 25px;
+           .check {
+               transform: translateX(0);
+           }
+           .price {
+               margin-right: 70px;
+           }
+           .fa-check-circle {
+            transform: rotate(360deg);
+           }
         }
     }
+}        
 
-}
+
+
+
 .btn {
     @include btn-rose;
     padding-left: 50px;
