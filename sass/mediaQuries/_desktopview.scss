@@ -1,11 +1,23 @@
 @media screen and (min-width: 800px) {
     
     .containerDesktop {
-        width: 1200px;
+        width: 1350px;
+        margin: auto;
     }
     header {
         img {
-            width: 25%;
+            width: 18%;
+        }
+    }
+    .search--box {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        .fa-map-marker-alt {
+            font-size: 1.35em;
+            color: #353535;
+        }
+        .input {
+            font-size: 1.35em;
         }
     }
     .selection {
@@ -16,13 +28,16 @@
         }
         &-select {
             width: 25%;
-            margin-right: 30px;
+            margin-right: 35px;
         } 
     }
 }
 .restaurantgrps {
     display: flex;
     flex-direction: row;
-    
-  
+    flex-wrap: wrap;
+    .card {
+        width: 22%;
+        margin-right: 35px;
+    }
 }
