@@ -156,11 +156,7 @@ header img {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.allrestaurants a {
-  text-decoration: none;
-  color: black;
-}
-.allrestaurants a .card {
+.allrestaurants .card {
   max-width: 100%;
   height: 250px;
   margin-bottom: 30px;
@@ -172,35 +168,39 @@ header img {
   box-shadow: 2px 5px 5px #e6e6e6;
   transition: all 0.3s;
 }
-.allrestaurants a .card:hover {
+.allrestaurants .card:hover {
   box-shadow: 0 2px 8px rgba(85, 84, 84, 0.6);
 }
-.allrestaurants a .card--picture {
+.allrestaurants .card a {
+  text-decoration: none;
+  color: black;
+}
+.allrestaurants .card--picture {
   height: 180px;
   width: 100%;
   object-fit: cover;
 }
-.allrestaurants a .card--subtitles {
+.allrestaurants .card--subtitles {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 11px 15px;
 }
-.allrestaurants a .card--subtitles .subtitle_1 {
+.allrestaurants .card--subtitles .subtitle_1 {
   font-size: 1.2em;
 }
-.allrestaurants a .card--subtitles .subtitle_2 {
+.allrestaurants .card--subtitles .subtitle_2 {
   font-size: 1em;
 }
-.allrestaurants a .card--subtitles p {
+.allrestaurants .card--subtitles p {
   line-height: 1.4em;
   margin: 0;
 }
-.allrestaurants a .card--subtitles .heart {
+.allrestaurants .card--subtitles .heart {
   font-size: 1.6em;
   padding-right: 10px;
 }
-.allrestaurants a .card--subtitles .case-new {
+.allrestaurants .card--subtitles .case-new {
   width: 85px;
   height: 30px;
   border-radius: 2px;
@@ -307,6 +307,30 @@ footer .container li a .icon2_footer {
   to {
     transform: rotate(-360deg);
   }
+}
+
+@media screen and (min-width: 800px) {
+  .containerDesktop {
+    width: 1200px;
+  }
+
+  header img {
+    width: 25%;
+  }
+
+  .selection ul {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  }
+  .selection-select {
+    width: 25%;
+    margin-right: 30px;
+  }
+}
+.restaurantgrps {
+  display: flex;
+  flex-direction: row;
 }
 
 /*# sourceMappingURL=style.css.map */

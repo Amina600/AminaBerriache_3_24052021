@@ -1,0 +1,28 @@
+@media screen and (min-width: 800px) {
+    
+    .containerDesktop {
+        width: 1200px;
+    }
+    header {
+        img {
+            width: 25%;
+        }
+    }
+    .selection {
+        ul {
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+        }
+        &-select {
+            width: 25%;
+            margin-right: 30px;
+        } 
+    }
+}
+.restaurantgrps {
+    display: flex;
+    flex-direction: row;
+    
+  
+}
