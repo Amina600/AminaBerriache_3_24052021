@@ -39,7 +39,7 @@ header img {
   margin: auto;
 }
 
-.search_box {
+.search--box {
   display: flex;
   justify-content: center;
   align-items: baseline;
@@ -47,11 +47,11 @@ header img {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.search_box .fa-map-marker-alt {
+.search--box .fa-map-marker-alt {
   font-size: 1.15em;
   color: #353535;
 }
-.search_box input {
+.search--box input {
   border: none;
   font-size: 1.1em;
   background-color: #eaeaea;
@@ -106,7 +106,7 @@ header img {
   padding-top: 10px;
   padding-bottom: 50px;
 }
-.selection .select {
+.selection-select {
   background-color: #f6f6f6;
   height: 70px;
   margin-bottom: 25px;
@@ -119,14 +119,14 @@ header img {
   position: relative;
   transition: all 0.4s ease-in-out;
 }
-.selection .select:hover {
+.selection-select:hover {
   box-shadow: 0 2px 8px rgba(85, 84, 84, 0.6);
   background: #f2eafb;
 }
-.selection .select:hover .color-icon {
+.selection-select:hover .color-icon {
   color: #9356dc;
 }
-.selection .select .circule {
+.selection-select--circle {
   width: 20px;
   height: 20px;
   border-radius: 10px;
@@ -137,30 +137,30 @@ header img {
   text-align: center;
   font-size: 0.95em;
 }
-.selection .select h2 {
+.selection-select h2 {
   font-size: 1.1em;
   font-weight: 400;
 }
-.selection .select .color-icon {
+.selection-select .color-icon {
   color: #7e7e7e;
   font-size: 1.3em;
   margin-right: 20px;
   margin-left: 30px;
 }
 
-.container_restaurants {
+.container-restaurants {
   background: #f6f6f6;
 }
 
-.all_restaurants {
+.allrestaurants {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.all_restaurants a {
+.allrestaurants a {
   text-decoration: none;
   color: black;
 }
-.all_restaurants a .card_restaurant {
+.allrestaurants a .card {
   max-width: 100%;
   height: 250px;
   margin-bottom: 30px;
@@ -172,10 +172,35 @@ header img {
   box-shadow: 2px 5px 5px #e6e6e6;
   transition: all 0.3s;
 }
-.all_restaurants a .card_restaurant:hover {
+.allrestaurants a .card:hover {
   box-shadow: 0 2px 8px rgba(85, 84, 84, 0.6);
 }
-.all_restaurants a .card_restaurant .case-new {
+.allrestaurants a .card--picture {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+}
+.allrestaurants a .card--subtitles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 15px;
+}
+.allrestaurants a .card--subtitles .subtitle_1 {
+  font-size: 1.2em;
+}
+.allrestaurants a .card--subtitles .subtitle_2 {
+  font-size: 1em;
+}
+.allrestaurants a .card--subtitles p {
+  line-height: 1.4em;
+  margin: 0;
+}
+.allrestaurants a .card--subtitles .heart {
+  font-size: 1.6em;
+  padding-right: 10px;
+}
+.allrestaurants a .card--subtitles .case-new {
   width: 85px;
   height: 30px;
   border-radius: 2px;
@@ -189,30 +214,6 @@ header img {
   position: absolute;
   top: 15px;
   right: 15px;
-}
-.all_restaurants a .card_restaurant .picture_restaurant {
-  height: 170px;
-  width: 100%;
-  object-fit: cover;
-}
-.all_restaurants a .card_restaurant .subtitles {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 0px 15px;
-}
-.all_restaurants a .card_restaurant .subtitle_1 {
-  font-size: 1.2em;
-}
-.all_restaurants a .card_restaurant .subtitle_2 {
-  font-size: 1em;
-}
-.all_restaurants a .card_restaurant p {
-  line-height: 1.4em;
-}
-.all_restaurants a .card_restaurant .heart {
-  font-size: 1.6em;
-  padding-right: 10px;
 }
 
 footer {
@@ -241,6 +242,71 @@ footer .container li a .icon1_footer {
 footer .container li a .icon2_footer {
   font-size: 0.8em;
   padding-right: 8px;
+}
+
+.spinner {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 300;
+  animation: fade-out 1s ease-in-out both;
+}
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.8;
+    visibility: hidden;
+  }
+}
+.spinner .circle {
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border-top: 10px solid #9356DC;
+  position: relative;
+  animation: circle 2s linear infinite;
+}
+.spinner .circle::before, .spinner .circle::after {
+  content: "";
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  top: -10px;
+  border-radius: 50%;
+}
+.spinner .circle::before {
+  border-top: 10px solid #FF79DA;
+  transform: rotate(120deg);
+}
+.spinner .circle::after {
+  border-top: 10px solid #99E2D0;
+  transform: rotate(240deg);
+}
+.spinner .circle span {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  animation: circle2 2s linear infinite;
+}
+@keyframes circle {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes circle2 {
+  to {
+    transform: rotate(-360deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
