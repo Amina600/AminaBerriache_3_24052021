@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/de4eadee7e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <title>ohmyfood</title>
+</head>
+<body> 
+    <div class="containerDesktop">
+        <!--****Loadingspinner-->
+        <div class="spinner">
+            <div class="circle">
+                <span>Loading...</span>
+            </div>
+
+        </div>
+        <!--****L'entete de la page****-->
+        <header>
+                <img src="images/logo/ohmyfood.png" alt="logo of ohmyfood">
+        </header>
+
+    <!--****Zone de recherche****-->
+        <form method="post" action="traitement.php" class="search--box">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="search" id="search" name="search" placeholder="Rechercher...">
+        </form>
+        <!--****Les titres+Boutton****-->
+        
+        <section class="title">
+            <div class="container">
+                <h1>Réservez le menu qui vous convient</h1>
+                <p>Découvrez des restaurants d'exeption, sélectionnés par nos soins.</p>
+                <button class="btn">Explorer nos restaurants</button>
+            </div>
+        </section>
+
+        <!--****Fonctionnement****-->
+        <section>
+            <div class="container selection">
+                <h1>Fonctionnement</h1>
+                <ul>
+                    <li class="selection-select">
+                        <span class="selection-select--circle">1</span>
+                        <i class="fas fa-mobile-alt color-icon"></i>
+                        <h2>Choissisez un restaurant</h2>
+                    </li>
+                    <li class="selection-select">
+                        <span class="selection-select--circle">2</span>
+                        <i class="fas fa-list-ul color-icon"></i>
+                        <h2>Composez votre menu</h2> 
+                    </li>
+                    <li class="selection-select">
+                        <span class="selection-select--circle">3</span>
+                        <i class="fas fa-store color-icon"></i>
+                        <h2>Dégustez au restaurant</h2>  
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+
+        <!--****Restaurants****-->
+        <section class="container-restaurants">
+            <div class="container">
+                <div class="allrestaurants">
+                    <h1 id="restaurants">Restaurants</h1>
+                    <a href="restaurant1.html">
+                        <ul>
+                            <li class="card">
+                                <img src="images/photo_small/photo1.jpg" class="card--picture" alt="photo d'un plat">
+                                <div class="card--subtitles">
+                                    <p>
+                                        <span class="case-new">Nouveau</span>
+                                        <span class="subtitle-1"><strong>La palette du goût</strong></span></br>
+                                        <span class="subtitle-2">Ménilmontant</span>
+                                    </p>
+                                    <svg class="heart" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" 
+                                    clip-rule="evenodd"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 
+                                    5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 
+                                    5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 
+                                    3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 
+                                    12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181"/></svg>
+                                </div>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="restaurant2.html">
+                        <ul>
+                            <li class="card">
+                                <img src="images/photo_small/photo2.jpg" class="card--picture" alt="photo d'un plat">
+                                <div class="card--subtitles">
+                                    <p>
+                                        <span class="case-new">Nouveau</span>
+                                        <span class="subtitle-1"><strong>La note enchantée</strong></span></br>
+                                        <span class="subtitle-2">Charonne</span>
+                                    </p>
+                                    <svg class="heart" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" 
+                                    clip-rule="evenodd"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 
+                                    5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 
+                                    5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 
+                                    3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 
+                                    12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181"/></svg>
+                                </div>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="restaurant3.html">
+                        <ul>
+                            <li class="card">
+                                <img src="images/photo_small/photo3.jpg" class="card--picture" alt="photo d'un plat">
+                                <div class="card--subtitles">
+                                    <p>
+                                        <span class="subtitle-1"><strong>À la française</strong></span></br>
+                                        <span class="subtitle-2">Cité Rouge</span>
+                                    </p>
+                                    <svg class="heart" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" 
+                                    clip-rule="evenodd"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 
+                                    5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 
+                                    5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 
+                                    3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 
+                                    12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181"/></svg>
+                                </div>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="restaurant4.html">
+                        <ul>
+                            <li class="card">
+                                <img src="images/photo_small/photo4.jpg" class="card--picture" alt="photo d'un plat">
+                                <div class="card--subtitles">
+                                    <p>
+                                        <span class="subtitle-1"><strong>Le délice des sens</strong></span></br>
+                                        <span class="subtitle-2">Folie-Méricout</span>
+                                    </p>
+                                    <svg class="heart" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" 
+                                    clip-rule="evenodd"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 
+                                    5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 
+                                    5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 
+                                    3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 
+                                    12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181"/></svg>
+                                </div>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--****Footer****-->
+    <footer id="footer">
+        <div class="container containerDesktop">
+            <h1 class="title_logo">ohmyfood</h1>
+            <ul>
+                <li>
+                    <a href="#footer">
+                        <i class="fas fa-utensils icon1_footer"></i>
+                        Proposer un restaurant
+                    </a>
+                </li>
+                <li>
+                    <a href="#footer">
+                        <i class="fas fa-hands-helping icon2_footer"></i>
+                        Devenir partenaire
+                    </a>
+                </li>
+                <li>
+                    <a href="#footer">
+                        Mentions légales
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:aminaharaoui@gmail.com">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+@mixin btn-rose {
+    border: none;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+    color: $color-white;
+    font-size: 1.2em;
+    background: linear-gradient(175deg, $secondary, $primary);
+    margin-top: 35px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 2px 8px rgba(31, 30, 30, 0.7);
+        background: linear-gradient(175deg, lighten($secondary, 3%), lighten($primary, 3%));
+    }
+}
+
+@mixin operation {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    cursor: pointer;
+    
+}
+@mixin box-shadow {
+    box-shadow: 2px 5px 5px #e6e6e6;
+}
+
+@mixin case-new {
+    width: 85px;
+    height: 30px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $tertiary;
+    color: darken($tertiary, 35%);
+    font-weight: 500;
+    font-size: 0.85em;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}

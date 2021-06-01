@@ -1,0 +1,24 @@
+.title {
+    background-color: $color-light-grey;
+    padding-bottom: 50px;
+    h1 {
+        text-align: center;
+        width: 75%;
+        margin: auto;   
+        padding-top: 45px;
+    } 
+    p {
+        font-size: 1.2em;
+        color: #656565;
+        text-align: center;
+        width: 90%;
+        margin: auto;   
+        margin-top: 20px;
+    } 
+    .btn {
+        @include btn-rose;
+    }
+}
+
+
+

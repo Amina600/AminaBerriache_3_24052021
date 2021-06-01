@@ -1,0 +1,61 @@
+.container-restaurants {
+    background: $color-light-grey;
+}
+.allrestaurants {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    a {
+        text-decoration: none;
+        color: black;
+
+        .card {
+            max-width: 100%;
+            height: 250px;
+            margin-bottom: 30px;
+            background: $color-white;
+            overflow: hidden;
+            border-radius: 25px;
+            cursor: pointer;
+            position: relative;
+            @include box-shadow;
+            transition: all 0.3s;
+            &:hover {
+                box-shadow: 0 2px 8px rgba(85, 84, 84, 0.6);
+            }
+            
+            &--picture {
+                height: 180px;
+                width: 100%;
+                object-fit: cover;
+            } 
+            &--subtitles {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 11px 15px;
+                .subtitle_1{
+                    font-size: 1.2em;
+    
+                }
+                .subtitle_2{
+                    font-size: 1em;
+                }
+                p {
+                    line-height: 1.4em;
+                    margin: 0;
+                } 
+                .heart {
+                    font-size: 1.6em;
+                    padding-right: 10px;  
+                    
+                }
+                .case-new {
+                    @include case-new;
+                 }
+            } 
+            
+            
+        }
+    }
+}
+
