@@ -10,12 +10,25 @@ h1 {
     font-size: 1.6em;
     font-weight: 500;
 }
-.title_Shrikhand {
+.title-Shrikhand {
     font-family: 'Shrikhand', cursive;
 }
-*ul {
+*ul{
     padding: 0;
 }
 *li {
     list-style-type: none;
 }
+@media screen and (min-width: 930px) {
+    .container {
+        width: 95%;
+        margin: auto;
+    }
+}
+@media screen and (min-width: 1441px) {
+    .container {
+        width: 1400px;
+        margin: auto;
+    }
+}
+

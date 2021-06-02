@@ -1,0 +1,36 @@
+.menu-restaurant {
+    padding: 0;
+    border-radius: 45px 45px 0px 0px;
+    z-index: 5;
+    position: relative;
+    background: $color-light-grey;
+    top: -70px;
+    margin-bottom: -70px;
+    padding-bottom: 70px;
+    menu {
+        padding: 0 45px 0 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 0;
+        .title-Shrikhand {
+            font-size: 1.9em; 
+            margin-bottom: 0;
+        }
+        .icon {
+            @include heart-fill;
+        }
+    }
+}
+@media screen and (min-width: 430px) and (max-width: 768px) {
+    .menu-restaurant {
+        padding: 0px 50px 0px 50px;
+        margin-bottom: -70px;
+        padding-bottom: 70px;
+        menu {
+            padding: 0 45px 0 0px;
+
+        }
+    }
+
+}

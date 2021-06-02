@@ -14,12 +14,13 @@
     
     .card {
         
-        max-width: 100%;
+        max-width: 365px;
         position: relative;
         @include box-shadow;
         overflow: hidden;
         margin-bottom: 20px;
         border-radius: 15px;
+        cursor: pointer;
         background: $color-white;
         transition: all 0.4s ease-in-out;
         opacity:0;
@@ -105,4 +106,13 @@
            }
         }
     }
-}        
+}  
+@media screen and (min-width: 800px) {
+    .articles {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}   

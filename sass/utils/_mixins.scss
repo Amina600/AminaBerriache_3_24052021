@@ -29,6 +29,32 @@
 @mixin box-shadow {
     box-shadow: 2px 5px 5px #e6e6e6;
 }
+@mixin heart-fill {
+    font-size: 1.6em;
+    padding-right: 10px;
+    .border {
+        fill: transparent;
+        stroke: black;
+    }
+
+    .fill {
+        transform: scale(0);
+        fill: red;
+        opacity: 0;
+        transform-origin: bottom center;
+        transition: all 0.4s ease-in-out;
+    }
+
+    &:hover {
+        .fill {
+            transform: scale(1);
+            opacity: 1;
+        }
+        .border {
+            stroke: red;
+        }
+    }
+}
 
 @mixin case-new {
     width: 85px;

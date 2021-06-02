@@ -18,3 +18,17 @@
         padding-left: 15px;
     }
 }
+@media screen and (min-width: 930px) {
+    
+    .search--box {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        .fa-map-marker-alt {
+            font-size: 1.35em;
+            color: #353535;
+        }
+        .input {
+            font-size: 1.35em;
+        }
+    }
+}
