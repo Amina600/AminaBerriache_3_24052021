@@ -41,13 +41,13 @@ header {
   justify-content: space-around;
   box-shadow: 0px 0px 5px #292929;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   position: relative;
   z-index: 2;
   background: #fff;
 }
 header img {
-  width: 40%;
+  width: 38%;
   margin: auto;
 }
 
@@ -406,9 +406,8 @@ footer .container li a .icon2_footer {
   }
 }
 .spinner .circle {
-  width: 200px;
-  height: 200px;
-  box-sizing: border-box;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border-top: 10px solid #9356DC;
   position: relative;
@@ -416,8 +415,8 @@ footer .container li a .icon2_footer {
 }
 .spinner .circle::before, .spinner .circle::after {
   content: "";
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   position: absolute;
   left: 0;
   top: -10px;
@@ -433,10 +432,11 @@ footer .container li a .icon2_footer {
 }
 .spinner .circle span {
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
+  font-size: 1.2em;
   text-align: center;
-  line-height: 200px;
+  line-height: 150px;
   animation: circle2 2s linear infinite;
 }
 @keyframes circle {

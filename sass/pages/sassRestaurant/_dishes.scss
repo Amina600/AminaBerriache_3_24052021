@@ -26,10 +26,10 @@
         opacity:0;
         transform: translateY(10px);
 
-        // Décallage de l'animation pour chaque éléments de la liste
+        /*Décallage de l'animation pour chaque éléments de la liste*/
         @for $i from 1 through 15 {
             &:nth-child(#{$i}) {
-                animation: fade-in .5s .1s*($i - 1) ease-out forwards;
+                animation: fade-in 0.5s .1s*($i - 1) ease-out forwards;
             }
         }
         @keyframes fade-in {
@@ -130,7 +130,7 @@
 }
 @media screen and (min-width: 1325px) {
     .articles-container {
-        width: 95%;
+        width: 92%;
         display: flex;
         flex-wrap: wrap;
         .grp1 {

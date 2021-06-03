@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -37,11 +38,11 @@ h1 {
   }
 }
 .fa-arrow-left {
-  font-size: 1.8em;
+  font-size: 1.4em;
   color: #353535;
   position: absolute;
   left: 35px;
-  bottom: 25px;
+  bottom: 17px;
 }
 
 .img-restaurant {
@@ -51,6 +52,12 @@ h1 {
   z-index: 2;
 }
 
+@media screen and (min-width: 1025px) {
+  .fa-arrow-left {
+    font: 1.8em;
+    bottom: 25px;
+  }
+}
 .container h2 {
   font-size: 1.1em;
   font-weight: 300;
@@ -73,6 +80,7 @@ h1 {
   transition: all 0.4s ease-in-out;
   opacity: 0;
   transform: translateY(10px);
+  /*Décallage de l'animation pour chaque éléments de la liste*/
 }
 .container .card:nth-child(1) {
   animation: fade-in 0.5s 0s ease-out forwards;
@@ -212,7 +220,7 @@ h1 {
 }
 @media screen and (min-width: 1325px) {
   .articles-container {
-    width: 95%;
+    width: 92%;
     display: flex;
     flex-wrap: wrap;
   }
@@ -286,7 +294,12 @@ h1 {
 }
 @media screen and (min-width: 801px) and (max-width: 930px) {
   .menu-restaurant menu {
-    padding: 0px 55px 0 55px;
+    padding: 0px 55px 0 65px;
+  }
+}
+@media screen and (min-width: 931px) {
+  .menu-restaurant menu {
+    padding: 0px 45px 0 45px;
   }
 }
 .btn {

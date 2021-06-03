@@ -37,7 +37,16 @@
     .menu-restaurant {
         
         menu {
-            padding: 0px 55px 0 55px;
+            padding: 0px 55px 0 65px;
+        }
+    }
+
+}
+@media screen and (min-width: 931px)  {
+    .menu-restaurant {
+        
+        menu {
+            padding: 0px 45px 0 45px;
         }
     }
 
