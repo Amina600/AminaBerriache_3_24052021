@@ -29,7 +29,7 @@ h1 {
   .container-desktop {
     width: 1450px;
     margin: auto;
-    box-shadow: 0px 0px 15px #292929;
+    box-shadow: 0px 0px 15px #808080;
   }
 
   body {
@@ -411,7 +411,7 @@ footer .container li a .icon2_footer {
   border-radius: 50%;
   border-top: 10px solid #9356DC;
   position: relative;
-  animation: circle 2s linear infinite;
+  animation: circle 3s linear infinite;
 }
 .spinner .circle::before, .spinner .circle::after {
   content: "";
@@ -437,7 +437,7 @@ footer .container li a .icon2_footer {
   font-size: 1.2em;
   text-align: center;
   line-height: 150px;
-  animation: circle2 2s linear infinite;
+  animation: circle2 3s linear infinite;
 }
 @keyframes circle {
   to {

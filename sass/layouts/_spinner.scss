@@ -29,7 +29,7 @@
         border-radius: 50%;
         border-top: 10px solid $primary;
         position: relative;
-        animation: circle 2s linear infinite;
+        animation: circle 3s linear infinite;
         &::before, &::after {
             content: '';
             width: 150px;
@@ -55,7 +55,7 @@
             font-size: 1.2em;
             text-align: center;
             line-height: 150px;
-            animation: circle2 2s linear infinite;
+            animation: circle2 3s linear infinite;
            
         }
         @keyframes circle {
