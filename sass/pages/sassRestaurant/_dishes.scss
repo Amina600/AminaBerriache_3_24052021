@@ -14,7 +14,7 @@
     
     .card {
         
-        max-width: 365px;
+        max-width: 100%;
         position: relative;
         @include box-shadow;
         overflow: hidden;
@@ -108,11 +108,47 @@
     }
 }  
 @media screen and (min-width: 800px) {
-    .articles {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
+    .articles-container {
+        width: 85%;
+        margin: auto;
     }
-}   
+}  
+@media screen and (min-width: 930px) and (max-width: 1324px) {
+    .articles-container {
+        .grp1 {
+            display: flex;
+            flex-wrap: wrap;
+            .container {
+                width: 45%;
+            }
+        }
+        .container {
+            width: 45%;
+        }
+    }
+
+}
+@media screen and (min-width: 1325px) {
+    .articles-container {
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        .grp1 {
+            display: flex;
+            flex-wrap: wrap;
+            width: 67%;
+            .container {
+                width: 45%;
+                margin-top: 0;
+            }
+        }
+        .container {
+            width: 30%;
+            margin-top: 0;
+        }
+    }
+
+
+}
+
+
