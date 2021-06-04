@@ -2,11 +2,18 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
+.fonctionnement {
+    background: $color-white;
+}
 .container {
     width: 88%;
     margin: auto;
 }
 h1 {
+    font-size: 1.6em;
+    font-weight: 500;
+}
+h2 {
     font-size: 1.6em;
     font-weight: 500;
 }
@@ -23,12 +30,12 @@ h1 {
 @media screen and (min-width: 1441px) {
     
     .container-desktop {
-        width: 1450px;
+        width: 1600px;
         margin: auto;
-        box-shadow: 0px 0px 15px #808080;
+        box-shadow: 0px 0px 10px #bdbdbd;
     }
     body {
-       background: #fbfbfb;
+       background: #e6e6e6;
        
     }
 }

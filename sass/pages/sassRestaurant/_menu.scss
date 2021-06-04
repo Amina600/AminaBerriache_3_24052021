@@ -7,7 +7,7 @@
     top: -70px;
     margin-bottom: -70px;
     padding-bottom: 70px;
-    menu {
+    .menu {
         padding: 0 45px 0 25px;
         display: flex;
         justify-content: space-between;
@@ -27,7 +27,7 @@
         padding: 0px 20px 0px 20px;
         margin-bottom: -70px;
         padding-bottom: 70px;
-        menu {
+        .menu {
             padding: 0 15px 0 15px;
         }
     }
@@ -36,7 +36,7 @@
 @media screen and (min-width: 801px) and (max-width: 930px) {
     .menu-restaurant {
         
-        menu {
+        .menu {
             padding: 0px 55px 0 65px;
         }
     }

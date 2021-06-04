@@ -4,12 +4,21 @@ body {
   margin: 0;
 }
 
+.fonctionnement {
+  background: #fff;
+}
+
 .container {
   width: 88%;
   margin: auto;
 }
 
 h1 {
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
+h2 {
   font-size: 1.6em;
   font-weight: 500;
 }
@@ -28,13 +37,13 @@ h1 {
 
 @media screen and (min-width: 1441px) {
   .container-desktop {
-    width: 1450px;
+    width: 1600px;
     margin: auto;
-    box-shadow: 0px 0px 15px #808080;
+    box-shadow: 0px 0px 10px #bdbdbd;
   }
 
   body {
-    background: #fbfbfb;
+    background: #e6e6e6;
   }
 }
 .fa-arrow-left {
@@ -45,9 +54,9 @@ h1 {
   bottom: 17px;
 }
 
-.img-restaurant {
+.image .img-restaurant {
   width: 100%;
-  height: 220px;
+  height: 310px;
   object-fit: cover;
   z-index: 2;
 }
@@ -56,6 +65,11 @@ h1 {
   .fa-arrow-left {
     font: 1.8em;
     bottom: 25px;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .image .img-restaurant {
+    height: 500px;
   }
 }
 .container h2 {
@@ -248,37 +262,37 @@ h1 {
   margin-bottom: -70px;
   padding-bottom: 70px;
 }
-.menu-restaurant menu {
+.menu-restaurant .menu {
   padding: 0 45px 0 25px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 0;
 }
-.menu-restaurant menu .title-Shrikhand {
+.menu-restaurant .menu .title-Shrikhand {
   font-size: 1.9em;
   margin-bottom: 0;
 }
-.menu-restaurant menu .icon {
+.menu-restaurant .menu .icon {
   font-size: 1.6em;
   padding-right: 10px;
 }
-.menu-restaurant menu .icon .border {
+.menu-restaurant .menu .icon .border {
   fill: transparent;
   stroke: black;
 }
-.menu-restaurant menu .icon .fill {
+.menu-restaurant .menu .icon .fill {
   transform: scale(0);
   fill: red;
   opacity: 0;
   transform-origin: bottom center;
   transition: all 0.4s ease-in-out;
 }
-.menu-restaurant menu .icon:hover .fill {
+.menu-restaurant .menu .icon:hover .fill {
   transform: scale(1);
   opacity: 1;
 }
-.menu-restaurant menu .icon:hover .border {
+.menu-restaurant .menu .icon:hover .border {
   stroke: red;
 }
 
@@ -288,12 +302,12 @@ h1 {
     margin-bottom: -70px;
     padding-bottom: 70px;
   }
-  .menu-restaurant menu {
+  .menu-restaurant .menu {
     padding: 0 15px 0 15px;
   }
 }
 @media screen and (min-width: 801px) and (max-width: 930px) {
-  .menu-restaurant menu {
+  .menu-restaurant .menu {
     padding: 0px 55px 0 65px;
   }
 }
