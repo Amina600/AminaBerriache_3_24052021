@@ -1,6 +1,6 @@
 .menu-restaurant {
     padding: 0;
-    border-radius: 45px 45px 0px 0px;
+    border-radius: 40px 40px 0px 0px;
     z-index: 5;
     position: relative;
     background: $color-light-grey;
@@ -8,7 +8,7 @@
     margin-bottom: -70px;
     padding-bottom: 70px;
     .menu {
-        padding: 0 45px 0 25px;
+        padding: 0 25px 0 25px;
         display: flex;
         justify-content: space-between;
         align-items: baseline;
@@ -27,27 +27,8 @@
         padding: 0px 20px 0px 20px;
         margin-bottom: -70px;
         padding-bottom: 70px;
-        .menu {
-            padding: 0 15px 0 15px;
-        }
-    }
-
-}
-@media screen and (min-width: 801px) and (max-width: 930px) {
-    .menu-restaurant {
         
-        .menu {
-            padding: 0px 55px 0 65px;
-        }
     }
 
 }
-@media screen and (min-width: 931px)  {
-    .menu-restaurant {
-        
-        menu {
-            padding: 0px 45px 0 45px;
-        }
-    }
 
-}

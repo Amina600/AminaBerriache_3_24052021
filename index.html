@@ -66,94 +66,89 @@
         </section>
 
         <!--****Restaurants****-->
-        <section class="container-restaurants">
-            <div class="container">
-                <div class="allrestaurants">
-                    <h2 id="restaurants">Restaurants</h2>
-                    <div >
-                        <ul class="restaurantgrps">
-                            <li class="card">
-                                <a href="restaurant1.html">
-                                    <img src="images/photo_small/photo1.jpg" class="card--picture" alt="photo d'un plat">
-                                    <div class="card--subtitles">
-                                        <p>
-                                            <span class="case-new">Nouveau</span>
-                                            <span class="subtitle-1"><strong>La palette du goût</strong></span><br/>
-                                            <span class="subtitle-2">Ménilmontant</span>
-                                        </p>
-                                        
-                                        <svg class="heart" width="26" height="25" viewbox="-1 0 25 25" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
-                                            
-                                            <path class="border" d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 
-                                            12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z" />
-                                            <path class="fill" d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 
-                                            12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z" />
-                                        </svg>
-                                        
-                                    </div>
-                                </a>
-                            </li>
-                        
-                            <li class="card">
-                                <a href="restaurant2.html">
-                                    <img src="images/photo_small/photo2.jpg" class="card--picture" alt="photo d'un plat">
-                                    <div class="card--subtitles">
-                                        <p>
-                                            <span class="case-new">Nouveau</span>
-                                            <span class="subtitle-1"><strong>La note enchantée</strong></span><br/>
-                                            <span class="subtitle-2">Charonne</span>
-                                        </p>
-                                        <svg class="heart" width="26" height="25" viewbox="-1 0 25 25" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
-                                            
-                                            <path class="border" d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 
-                                            12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z" />
-                                            <path class="fill" d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 
-                                            12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z" />
-                                        </svg>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="card">
-                                <a href="restaurant3.html">
-                                    <img src="images/photo_small/photo3.jpg" class="card--picture" alt="photo d'un plat">
-                                    <div class="card--subtitles">
-                                        <p>
-                                            <span class="subtitle-1"><strong>À la française</strong></span><br/>
-                                            <span class="subtitle-2">Cité Rouge</span>
-                                        </p>
-                                        <svg class="heart" width="26" height="25" viewbox="-1 0 25 25" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
-                                            
-                                            <path class="border" d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 
-                                            12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z" />
-                                            <path class="fill" d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 
-                                            12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z" />
-                                        </svg>
-                                    </div>
-                                </a>
-                            </li>
-                        
-                            <li class="card">
-                                <a href="restaurant4.html">
-                                    <img src="images/photo_small/photo4.jpg" class="card--picture" alt="photo d'un plat">
-                                    <div class="card--subtitles">
-                                        <p>
-                                            <span class="subtitle-1"><strong>Le délice des sens</strong></span><br/>
-                                            <span class="subtitle-2">Folie-Méricout</span>
-                                        </p>
-                                        <svg class="heart" width="26" height="25" viewbox="-1 0 25 25" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
-                                        
-                                            <path class="border" d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 
-                                            12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z" />
-                                            <path class="fill" d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 
-                                            12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z" />
-                                        </svg>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                        
-                    </div>
-                </div>
+        <section class="background-restaurant">
+            <h2 id="restaurants">Restaurants</h2>
+            <div class="container-restaurants" id="container-restaurants-desktop">
+                <ul class="allrestaurants">
+                    <li class="card">
+                        <a href="restaurant1.html">
+                            <img src="images/photo_small/photo1.jpg" class="card--picture" alt="photo d'un plat">
+                            <div class="card--subtitles">
+                                <p>
+                                    <span class="case-new">Nouveau</span>
+                                    <span class="subtitle-1"><strong>La palette du goût</strong></span><br/>
+                                    <span class="subtitle-2">Ménilmontant</span>
+                                </p>
+                                
+                                <svg class="heart" width="26" height="25" viewbox="-1 0 25 25" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                                    
+                                    <path class="border" d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 
+                                    12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z" />
+                                    <path class="fill" d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 
+                                    12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z" />
+                                </svg>
+                                
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="card">
+                        <a href="restaurant2.html">
+                            <img src="images/photo_small/photo2.jpg" class="card--picture" alt="photo d'un plat">
+                            <div class="card--subtitles">
+                                <p>
+                                    <span class="case-new">Nouveau</span>
+                                    <span class="subtitle-1"><strong>La note enchantée</strong></span><br/>
+                                    <span class="subtitle-2">Charonne</span>
+                                </p>
+                                <svg class="heart" width="26" height="25" viewbox="-1 0 25 25" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                                    
+                                    <path class="border" d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 
+                                    12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z" />
+                                    <path class="fill" d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 
+                                    12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z" />
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="card">
+                        <a href="restaurant3.html">
+                            <img src="images/photo_small/photo3.jpg" class="card--picture" alt="photo d'un plat">
+                            <div class="card--subtitles">
+                                <p>
+                                    <span class="subtitle-1"><strong>À la française</strong></span><br/>
+                                    <span class="subtitle-2">Cité Rouge</span>
+                                </p>
+                                <svg class="heart" width="26" height="25" viewbox="-1 0 25 25" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                                    
+                                    <path class="border" d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 
+                                    12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z" />
+                                    <path class="fill" d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 
+                                    12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z" />
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="card">
+                        <a href="restaurant4.html">
+                            <img src="images/photo_small/photo4.jpg" class="card--picture" alt="photo d'un plat">
+                            <div class="card--subtitles">
+                                <p>
+                                    <span class="subtitle-1"><strong>Le délice des sens</strong></span><br/>
+                                    <span class="subtitle-2">Folie-Méricout</span>
+                                </p>
+                                <svg class="heart" width="26" height="25" viewbox="-1 0 25 25" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                                
+                                    <path class="border" d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 
+                                    12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z" />
+                                    <path class="fill" d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 
+                                    12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z" />
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
 
