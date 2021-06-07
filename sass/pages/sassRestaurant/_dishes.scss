@@ -2,131 +2,134 @@
 .articles-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-
-    h2 {
-        font-size: 1.1em;
-        font-weight: 300;
-        border-bottom: 3px solid $tertiary;
-        width: 45px;
-        margin-top: 35px;
-        padding-bottom: 3px;
-        z-index: 5;
-        position: relative;
-    }
-    
-    .card {
+    article {
+        width: 343px;
+        padding: 15px;
+        h2 {
+            font-size: 1.1em;
+            font-weight: 300;
+            border-bottom: 4px solid $tertiary;
+            width: 45px;
+            margin-top: 35px;
+            padding-bottom: 3px;
+            z-index: 5;
+            position: relative;
+        }
         
-        max-width: 343px;
-        position: relative;
-        @include box-shadow;
-        overflow: hidden;
-        margin-bottom: 20px;
-        border-radius: 15px;
-        cursor: pointer;
-        background: $color-white;
-        opacity:0;
-        transform: translateY(10px);
-
-        /*Décallage de l'animation pour chaque éléments de la liste*/
-        @for $i from 1 through 15 {
-            &:nth-child(#{$i}) {
-                animation: fade-in 0.5s .1s*($i - 1) ease-out forwards;
+        .card {
+            
+            max-width: 343px;
+            position: relative;
+            @include box-shadow;
+            overflow: hidden;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            cursor: pointer;
+            background: $color-white;
+            opacity:0;
+            transform: translateY(10px);
+    
+            /*Décallage de l'animation pour chaque éléments de la liste*/
+            @for $i from 1 through 15 {
+                &:nth-child(#{$i}) {
+                    animation: fade-in 0.5s .1s*($i - 1) ease-out forwards;
+                }
             }
-        }
-        @keyframes fade-in {
-            0%{
-                opacity:0;
-                transform: translateY(10px);
+            @keyframes fade-in {
+                0%{
+                    opacity:0;
+                    transform: translateY(10px);
+                }
+                100%{
+                    opacity:1;
+                    transform: translateY(0px);
+                }
             }
-            100%{
-                opacity:1;
-                transform: translateY(0px);
-            }
-        }
-        .dishes {
-            padding: 15px;
-            padding-right: 20px;
-            h3 {
-                font-size: 1.1em;
-                margin-bottom: 5px;
-                margin-top: 3px;
-                font-weight: 500;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                transition: all 0.4s ease-in-out;
-            }
-            .dishes-name {
-                display: flex;
-                flex-direction: row;
-                align-items: baseline;
-                justify-content: space-between;
-                
-                .info {
-                    font-size: 0.95em;
-                    margin: 0;
+            .dishes {
+                padding: 15px;
+                padding-right: 20px;
+                h3 {
+                    font-size: 1.1em;
+                    margin-bottom: 5px;
+                    margin-top: 3px;
+                    font-weight: 500;
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: nowrap;
+                    transition: all 0.4s ease-in-out;
                 }
-                .price {
-                    margin: 0;
-                    padding-left: 10px;
+                .dishes-name {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: baseline;
+                    justify-content: space-between;
+                    
+                    .info {
+                        font-size: 0.95em;
+                        margin: 0;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        transition: all 0.4s ease-in-out;
+                    }
+                    .price {
+                        margin: 0;
+                        padding-left: 10px;
+                        transition: all 0.4s ease-in-out;
+                    }
+                }
+            }
+            .check {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $color-white;
+                width: 0px;
+                height: 80px;
+                background: $tertiary;
+                position: absolute;
+                right: 0;
+                top: 0;
+                font-size: 1.3em;
+                transition: all 0.4s ease-in-out;
+                .fa-check-circle {
+                    transform: rotate(1deg);
                     transition: all 0.4s ease-in-out;
                 }
             }
-        }
-        .check {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: $color-white;
-            width: 70px;
-            height: 80px;
-            background: $tertiary;
-            position: absolute;
-            right: 0;
-            top: 0;
-            font-size: 1.3em;
-            transition: all 0.4s ease-in-out;
-            transform: translateX(70px);
-            .fa-check-circle {
-                transform: rotate(1deg);
-                transition: all 0.4s ease-in-out;
+            &:hover { 
+                box-shadow: 0 2px 8px rgba(85, 84, 84, 0.7);
+                .check {
+                   width: 70px;
+                }
+                .price, h3 {
+                    padding-right: 75px;
+                }
+                .fa-check-circle {
+                    transform: rotate(360deg);
+                }
             }
         }
-        &:hover { 
-            box-shadow: 0 2px 8px rgba(85, 84, 84, 0.6);
-           .check {
-               transform: translateX(0);
-           }
-           .price, h3 {
-               padding-right: 75px;
-           }
-           .fa-check-circle {
-                transform: rotate(360deg);
-           }
-        }
     }
-}  
+    
+    
+}
+
+    
+
 
 @media screen and (min-width: 800px) {
     .articles-container {
-            flex-direction: row;
-            flex-wrap: wrap;
-            .grp1 {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                article {
-                    margin-right: 20px;
-                }
-            }
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+       
+        
     }
+    
 }  
 
 

@@ -10,11 +10,11 @@
     font-size: 1.2em;
     background: linear-gradient(175deg, $secondary, $primary);
     margin-top: 35px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
     transition: all 0.4s ease-in-out;
     cursor: pointer;
     &:hover {
-        box-shadow: 0 2px 8px rgba(31, 30, 30, 0.7);
+        box-shadow: 0 2px 8px rgba(31, 30, 30, 08);
         background: linear-gradient(175deg, lighten($secondary, 3%), lighten($primary, 3%));
     }
 }

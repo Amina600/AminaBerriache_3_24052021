@@ -4,7 +4,7 @@
     padding-top: 30px;
     padding-bottom: 30px;
     h2 {
-        padding-left: 30px;
+        padding-left: 35px;
     }
     .container-restaurants {
         width: 94%;
@@ -31,7 +31,7 @@
         @include box-shadow;
         transition: all 0.3s;
         &:hover {
-            box-shadow: 0 2px 8px rgba(85, 84, 84, 0.6);
+            box-shadow: 0 2px 8px rgba(85, 84, 84, 0.7);
         }
 
         a {
@@ -87,10 +87,8 @@
             }
         }
     }
-        
-    
 }
-@media screen and (min-width: 1186px) and (max-width: 1440px) {
+@media screen and (min-width: 1186px) {
     #container-restaurants-desktop {
         width: 100%;
         .allrestaurants{
@@ -100,15 +98,6 @@
         }
     }
 }
-@media screen and (min-width: 1441px) {
-    #container-restaurants-desktop {
-        width: 100%;
-        .allrestaurants{
-            .card {
-                width: 22%;
-            }
-        }
-    }
-}
+
 
 
