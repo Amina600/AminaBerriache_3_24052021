@@ -6,7 +6,7 @@
     &-select {
         
         background-color: $color-light-grey;
-        height: 70px;
+        padding-right: 4px;
         margin-bottom: 25px;
         border-radius: 25px;
         @include operation;
@@ -32,7 +32,10 @@
             position: absolute;
             left: -10px;
             text-align: center;
-            font-size: 0.95em;
+            
+            span {
+                font-size: 0.85em;
+            }
 
         }
         h2 {
@@ -49,57 +52,25 @@
         
     } 
 }
-@media screen and (min-width: 800px) and (max-width: 1023px) {
+@media screen and (min-width: 800px) and (max-width: 1071px) {
+    .selection {
+        
+        &-select {
+            width: 47%;
+        } 
+    }
+}
+@media screen and (min-width: 1072px)  {
     
     .selection {
         ul {
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
             margin: auto;
         }
         &-select {
-            width: 45%;
-            margin-right: 20px;
-        } 
-    }
-}
-@media screen and (min-width: 930px) and (max-width: 1024px) {
-    
-    .selection {
-        ul {
-            display: flex;
-            flex-direction: row;
-            margin: auto;
-        }
-        &-select {
-            width: 32%;
-            margin-right: 20px;
-        } 
-    }
-}
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
-    .selection {
-        ul {
-            display: flex;
-            flex-direction: row;
-            margin: auto;
-        }
-        &-select {
-            width: 31%;
-            margin-right: 27px;
-        } 
-    }
-}
-@media screen and (min-width: 1441px) {
-    .selection {
-        ul {
-            display: flex;
-            flex-direction: row;
-            margin: auto;
-        }
-        &-select {
-            width: 32%;
-            margin-right: 25px;
+            width: 300px;
+            margin-right: 30px;
         } 
     }
 }
