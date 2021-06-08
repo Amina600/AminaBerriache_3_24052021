@@ -1,9 +1,10 @@
 @import"./utils/variables";
 @import"./utils/mixins";
-@import"./sassRestaurant/headerRestaurant";
-@import"./sassRestaurant/dishes";
-@import"./sassRestaurant/menu";
-@import"./sassRestaurant/btn";
+@import"./base/base";
+@import"./pages/sassRestaurant/headerRestaurant";
+@import"./pages/sassRestaurant/dishes";
+@import"./pages/sassRestaurant/menu";
+@import"./pages/sassRestaurant/btn";
 
 
 

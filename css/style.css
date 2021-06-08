@@ -3,9 +3,8 @@ body {
   margin: 0;
 }
 
-.container {
-  width: 88%;
-  margin: auto;
+.fonctionnement {
+  background: #fff;
 }
 
 h1 {
@@ -13,7 +12,12 @@ h1 {
   font-weight: 500;
 }
 
-.title_Shrikhand {
+h2 {
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
+.title-Shrikhand {
   font-family: "Shrikhand", cursive;
 }
 
@@ -25,27 +29,52 @@ h1 {
   list-style-type: none;
 }
 
+@media screen and (min-width: 1441px) {
+  .container-desktop {
+    width: 1600px;
+    margin: auto;
+    box-shadow: 0px 0px 7px #7d7c7c;
+  }
+
+  body {
+    background: #e6e6e6;
+  }
+}
 header {
   display: flex;
   justify-content: space-around;
-  box-shadow: 0px 0px 5px #292929;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  box-shadow: 0px 0px 7px #7d7c7c;
+  height: 55px;
   position: relative;
   z-index: 2;
+  background: #fff;
 }
 header img {
-  width: 45%;
+  width: 32%;
   margin: auto;
 }
 
+@media screen and (min-width: 700px) and (max-width: 930px) {
+  header img {
+    width: 20%;
+  }
+}
+@media screen and (min-width: 931px) and (max-width: 1440px) {
+  header img {
+    width: 15%;
+  }
+}
+@media screen and (min-width: 1441px) {
+  header img {
+    width: 14%;
+  }
+}
 .search--box {
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   background-color: #eaeaea;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  height: 60px;
 }
 .search--box .fa-map-marker-alt {
   font-size: 1.15em;
@@ -57,8 +86,18 @@ header img {
   background-color: #eaeaea;
   outline: none;
   padding-left: 15px;
+  width: 140px;
 }
 
+@media screen and (min-width: 930px) {
+  .search--box .fa-map-marker-alt {
+    font-size: 1.35em;
+    color: #353535;
+  }
+  .search--box .input {
+    font-size: 1.35em;
+  }
+}
 .title {
   background-color: #f6f6f6;
   padding-bottom: 50px;
@@ -89,22 +128,18 @@ header img {
   font-size: 1.2em;
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   margin-top: 35px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
   transition: all 0.4s ease-in-out;
   cursor: pointer;
 }
 .title .btn:hover {
-  box-shadow: 0 2px 8px rgba(31, 30, 30, 0.7);
+  box-shadow: 0 2px 8px #1f1e1e;
   background: linear-gradient(175deg, #ff88de, #9b63df);
 }
 
 /*Fonctionnement*/
 .selection {
-  padding-top: 20px;
-}
-.selection ul {
-  padding-top: 10px;
-  padding-bottom: 50px;
+  padding: 35px;
 }
 .selection-select {
   background-color: #f6f6f6;
@@ -133,7 +168,7 @@ header img {
   background: #9356DC;
   color: #fff;
   position: absolute;
-  left: -12px;
+  left: -10px;
   text-align: center;
   font-size: 0.95em;
 }
@@ -148,20 +183,74 @@ header img {
   margin-left: 30px;
 }
 
-.container-restaurants {
-  background: #f6f6f6;
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  .selection ul {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .selection-select {
+    width: 45%;
+    margin-right: 20px;
+  }
 }
-
-.allrestaurants {
+@media screen and (min-width: 930px) and (max-width: 1024px) {
+  .selection ul {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  }
+  .selection-select {
+    width: 32%;
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .selection ul {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  }
+  .selection-select {
+    width: 31%;
+    margin-right: 27px;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .selection ul {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  }
+  .selection-select {
+    width: 32%;
+    margin-right: 25px;
+  }
+}
+.background-restaurant {
+  background: #f6f6f6;
+  width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.allrestaurants a {
-  text-decoration: none;
-  color: black;
+.background-restaurant h2 {
+  padding-left: 35px;
 }
-.allrestaurants a .card {
-  max-width: 100%;
+.background-restaurant .container-restaurants {
+  width: 94%;
+  margin: auto;
+}
+
+.allrestaurants {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.allrestaurants .card {
+  width: 100%;
   height: 250px;
   margin-bottom: 30px;
   background: #fff;
@@ -172,35 +261,59 @@ header img {
   box-shadow: 2px 5px 5px #e6e6e6;
   transition: all 0.3s;
 }
-.allrestaurants a .card:hover {
-  box-shadow: 0 2px 8px rgba(85, 84, 84, 0.6);
+.allrestaurants .card:hover {
+  box-shadow: 0 2px 8px rgba(85, 84, 84, 0.7);
 }
-.allrestaurants a .card--picture {
+.allrestaurants .card a {
+  text-decoration: none;
+  color: black;
+}
+.allrestaurants .card--picture {
   height: 180px;
   width: 100%;
   object-fit: cover;
 }
-.allrestaurants a .card--subtitles {
+.allrestaurants .card--subtitles {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 11px 15px;
 }
-.allrestaurants a .card--subtitles .subtitle_1 {
+.allrestaurants .card--subtitles .subtitle_1 {
   font-size: 1.2em;
 }
-.allrestaurants a .card--subtitles .subtitle_2 {
+.allrestaurants .card--subtitles .subtitle_2 {
   font-size: 1em;
 }
-.allrestaurants a .card--subtitles p {
+.allrestaurants .card--subtitles p {
   line-height: 1.4em;
   margin: 0;
 }
-.allrestaurants a .card--subtitles .heart {
+.allrestaurants .card--subtitles .heart {
   font-size: 1.6em;
   padding-right: 10px;
 }
-.allrestaurants a .card--subtitles .case-new {
+.allrestaurants .card--subtitles .heart .border {
+  fill: transparent;
+  stroke: black;
+  opacity: 1;
+  transition: all 0.4s linear;
+}
+.allrestaurants .card--subtitles .heart .fill {
+  transform: scale(0);
+  opacity: 0;
+  transform-origin: bottom center;
+  transition: all 0.4s linear;
+}
+.allrestaurants .card--subtitles .heart:hover .fill {
+  transform: scale(1);
+  opacity: 1;
+}
+.allrestaurants .card--subtitles .heart:hover .border {
+  stroke: transparent;
+  opacity: 0;
+}
+.allrestaurants .card--subtitles .case-new {
   width: 85px;
   height: 30px;
   border-radius: 2px;
@@ -216,12 +329,40 @@ header img {
   right: 15px;
 }
 
+@media screen and (min-width: 800px) {
+  .container-restaurants {
+    width: 0%;
+  }
+
+  #container-restaurants-desktop {
+    width: 100%;
+  }
+  #container-restaurants-desktop .allrestaurants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #container-restaurants-desktop .allrestaurants .card {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1186px) {
+  #container-restaurants-desktop {
+    width: 100%;
+  }
+  #container-restaurants-desktop .allrestaurants .card {
+    width: 22%;
+  }
+}
 footer {
   background: #353535;
 }
 footer .container {
   padding-top: 10px;
   padding-bottom: 30px;
+  padding-left: 35px;
 }
 footer .container .title_logo {
   font-family: "Shrikhand", cursive;
@@ -246,66 +387,55 @@ footer .container li a .icon2_footer {
 
 .spinner {
   position: fixed;
+  left: -2px;
   width: 100%;
   height: 100%;
   background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 300;
-  animation: fade-out 1s ease-in-out both;
+  z-index: 10;
+  animation: fade-out 0.4s ease-in-out both;
+  animation-delay: 1.3s;
 }
 @keyframes fade-out {
   from {
     opacity: 1;
   }
   to {
-    opacity: 0.8;
+    opacity: 0;
     visibility: hidden;
   }
 }
 .spinner .circle {
-  width: 200px;
-  height: 200px;
-  box-sizing: border-box;
-  border-radius: 50%;
-  border-top: 10px solid #9356DC;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
   position: relative;
-  animation: circle 2s linear infinite;
+  margin: 0 auto;
 }
 .spinner .circle::before, .spinner .circle::after {
   content: "";
-  width: 200px;
-  height: 200px;
   position: absolute;
-  left: 0;
-  top: -10px;
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: 7px solid transparent;
+  border-top-color: #99E2D0;
 }
 .spinner .circle::before {
-  border-top: 10px solid #FF79DA;
-  transform: rotate(120deg);
+  border: 7px solid #ccc;
 }
 .spinner .circle::after {
-  border-top: 10px solid #99E2D0;
-  transform: rotate(240deg);
+  z-index: 20;
+  animation: spin 1s infinite;
 }
-.spinner .circle span {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  text-align: center;
-  line-height: 200px;
-  animation: circle2 2s linear infinite;
-}
-@keyframes circle {
-  to {
-    transform: rotate(360deg);
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
-}
-@keyframes circle2 {
-  to {
-    transform: rotate(-360deg);
+  100% {
+    transform: rotate(360deg);
   }
 }
 

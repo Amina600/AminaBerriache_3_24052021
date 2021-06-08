@@ -1,3 +1,7 @@
+@mixin header-shadow {
+    box-shadow: 0px 0px 7px #7d7c7c;
+}
+
 @mixin btn-rose {
     border: none;
     height: 50px;
@@ -10,11 +14,11 @@
     font-size: 1.2em;
     background: linear-gradient(175deg, $secondary, $primary);
     margin-top: 35px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
     transition: all 0.4s ease-in-out;
     cursor: pointer;
     &:hover {
-        box-shadow: 0 2px 8px rgba(31, 30, 30, 0.7);
+        box-shadow: 0 2px 8px rgba(31, 30, 30, 08);
         background: linear-gradient(175deg, lighten($secondary, 3%), lighten($primary, 3%));
     }
 }
@@ -28,6 +32,34 @@
 }
 @mixin box-shadow {
     box-shadow: 2px 5px 5px #e6e6e6;
+}
+@mixin heart-fill {
+    font-size: 1.6em;
+    padding-right: 10px;
+    .border {
+        fill: transparent;
+        stroke: black;
+        opacity: 1;
+        transition: all 0.4s linear;
+    }
+
+    .fill {
+        transform: scale(0);
+        opacity: 0;
+        transform-origin: bottom center;
+        transition: all 0.4s linear;
+    }
+
+    &:hover {
+        .fill {
+            transform: scale(1);
+            opacity: 1;
+        }
+        .border {
+            stroke: transparent;
+            opacity: 0;
+        }
+    }
 }
 
 @mixin case-new {

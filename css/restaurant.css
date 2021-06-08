@@ -1,83 +1,141 @@
+@charset "UTF-8";
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.fonctionnement {
+  background: #fff;
+}
+
+h1 {
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
+.title-Shrikhand {
+  font-family: "Shrikhand", cursive;
+}
+
+* ul {
+  padding: 0;
+}
+
+* li {
+  list-style-type: none;
+}
+
+@media screen and (min-width: 1441px) {
+  .container-desktop {
+    width: 1600px;
+    margin: auto;
+    box-shadow: 0px 0px 7px #7d7c7c;
+  }
+
+  body {
+    background: #e6e6e6;
+  }
+}
 .fa-arrow-left {
   font-size: 1.4em;
   color: #353535;
   position: absolute;
-  left: 29px;
+  left: 35px;
   bottom: 16px;
 }
 
-.img_restaurant {
+.image .img-restaurant {
   width: 100%;
-  height: 220px;
+  height: 310px;
   object-fit: cover;
   z-index: 2;
 }
 
-.container h2 {
+@media screen and (min-width: 1441px) {
+  .image .img-restaurant {
+    height: 500px;
+  }
+}
+.articles-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.articles-container article {
+  width: 343px;
+  padding: 15px;
+}
+.articles-container article h2 {
   font-size: 1.1em;
   font-weight: 300;
-  border-bottom: 3px solid #99E2D0;
+  border-bottom: 4px solid #99E2D0;
   width: 45px;
   margin-top: 35px;
   padding-bottom: 3px;
   z-index: 5;
   position: relative;
 }
-.container .card {
-  max-width: 100%;
+.articles-container article .card {
+  max-width: 343px;
   position: relative;
   box-shadow: 2px 5px 5px #e6e6e6;
   overflow: hidden;
   margin-bottom: 20px;
   border-radius: 15px;
+  cursor: pointer;
   background: #fff;
-  transition: all 0.4s ease-in-out;
   opacity: 0;
   transform: translateY(10px);
+  /*Décallage de l'animation pour chaque éléments de la liste*/
 }
-.container .card:nth-child(1) {
+.articles-container article .card:nth-child(1) {
   animation: fade-in 0.5s 0s ease-out forwards;
 }
-.container .card:nth-child(2) {
+.articles-container article .card:nth-child(2) {
   animation: fade-in 0.5s 0.1s ease-out forwards;
 }
-.container .card:nth-child(3) {
+.articles-container article .card:nth-child(3) {
   animation: fade-in 0.5s 0.2s ease-out forwards;
 }
-.container .card:nth-child(4) {
+.articles-container article .card:nth-child(4) {
   animation: fade-in 0.5s 0.3s ease-out forwards;
 }
-.container .card:nth-child(5) {
+.articles-container article .card:nth-child(5) {
   animation: fade-in 0.5s 0.4s ease-out forwards;
 }
-.container .card:nth-child(6) {
+.articles-container article .card:nth-child(6) {
   animation: fade-in 0.5s 0.5s ease-out forwards;
 }
-.container .card:nth-child(7) {
+.articles-container article .card:nth-child(7) {
   animation: fade-in 0.5s 0.6s ease-out forwards;
 }
-.container .card:nth-child(8) {
+.articles-container article .card:nth-child(8) {
   animation: fade-in 0.5s 0.7s ease-out forwards;
 }
-.container .card:nth-child(9) {
+.articles-container article .card:nth-child(9) {
   animation: fade-in 0.5s 0.8s ease-out forwards;
 }
-.container .card:nth-child(10) {
+.articles-container article .card:nth-child(10) {
   animation: fade-in 0.5s 0.9s ease-out forwards;
 }
-.container .card:nth-child(11) {
+.articles-container article .card:nth-child(11) {
   animation: fade-in 0.5s 1s ease-out forwards;
 }
-.container .card:nth-child(12) {
+.articles-container article .card:nth-child(12) {
   animation: fade-in 0.5s 1.1s ease-out forwards;
 }
-.container .card:nth-child(13) {
+.articles-container article .card:nth-child(13) {
   animation: fade-in 0.5s 1.2s ease-out forwards;
 }
-.container .card:nth-child(14) {
+.articles-container article .card:nth-child(14) {
   animation: fade-in 0.5s 1.3s ease-out forwards;
 }
-.container .card:nth-child(15) {
+.articles-container article .card:nth-child(15) {
   animation: fade-in 0.5s 1.4s ease-out forwards;
 }
 @keyframes fade-in {
@@ -90,11 +148,11 @@
     transform: translateY(0px);
   }
 }
-.container .card .dishes {
+.articles-container article .card .dishes {
   padding: 15px;
   padding-right: 20px;
 }
-.container .card .dishes h3 {
+.articles-container article .card .dishes h3 {
   font-size: 1.1em;
   margin-bottom: 5px;
   margin-top: 3px;
@@ -104,29 +162,31 @@
   white-space: nowrap;
   transition: all 0.4s ease-in-out;
 }
-.container .card .dishes .dishes-name {
+.articles-container article .card .dishes .dishes-name {
   display: flex;
   flex-direction: row;
   align-items: baseline;
   justify-content: space-between;
 }
-.container .card .dishes .dishes-name .info {
+.articles-container article .card .dishes .dishes-name .info {
   font-size: 0.95em;
   margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-.container .card .dishes .dishes-name .price {
-  margin: 0;
   transition: all 0.4s ease-in-out;
 }
-.container .card .check {
+.articles-container article .card .dishes .dishes-name .price {
+  margin: 0;
+  padding-left: 10px;
+  transition: all 0.4s ease-in-out;
+}
+.articles-container article .card .check {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
-  width: 70px;
+  width: 0px;
   height: 80px;
   background: #99E2D0;
   position: absolute;
@@ -134,28 +194,36 @@
   top: 0;
   font-size: 1.3em;
   transition: all 0.4s ease-in-out;
-  transform: translateX(70px);
 }
-.container .card .check .fa-check-circle {
+.articles-container article .card .check .fa-check-circle {
   transform: rotate(1deg);
   transition: all 0.4s ease-in-out;
 }
-.container .card:hover {
-  box-shadow: 0 2px 8px rgba(85, 84, 84, 0.6);
+.articles-container article .card:hover {
+  box-shadow: 0 2px 8px rgba(85, 84, 84, 0.7);
 }
-.container .card:hover .check {
-  transform: translateX(0);
+.articles-container article .card:hover .check {
+  width: 70px;
 }
-.container .card:hover .price, .container .card:hover h3 {
+.articles-container article .card:hover .price, .articles-container article .card:hover h3 {
   padding-right: 75px;
 }
-.container .card:hover .fa-check-circle {
+.articles-container article .card:hover .fa-check-circle {
   transform: rotate(360deg);
 }
 
-.menu_restaurant {
+@media screen and (min-width: 800px) {
+  .articles-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+}
+.menu-restaurant {
   padding: 0;
-  border-radius: 45px 45px 0px 0px;
+  border-radius: 40px 40px 0px 0px;
   z-index: 5;
   position: relative;
   background: #f6f6f6;
@@ -163,43 +231,49 @@
   margin-bottom: -70px;
   padding-bottom: 70px;
 }
-.menu_restaurant menu {
-  padding: 0 45px 0 25px;
+.menu-restaurant .menu {
+  padding: 0 25px 0 25px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 0;
 }
-.menu_restaurant menu .title_Shrikhand {
+.menu-restaurant .menu .title-Shrikhand {
   font-size: 1.9em;
   margin-bottom: 0;
 }
-.menu_restaurant menu .icon .heart:hover {
-  animation: animate-heart 3s linear;
+.menu-restaurant .menu .icon {
+  font-size: 1.6em;
+  padding-right: 10px;
 }
-@keyframes animate-heart {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    background: linear-gradient(175deg, #ff88de, #9b63df);
-    opacity: 0.5;
-  }
-  50% {
-    background: linear-gradient(175deg, #ff88de, #9b63df);
-    opacity: 0.7;
-  }
-  80% {
-    background: linear-gradient(175deg, #ff88de, #9b63df);
-    opacity: 0.9;
-  }
-  100% {
-    background: linear-gradient(175deg, #ff88de, #9b63df);
-    opacity: 1;
-    stroke: 0;
-  }
+.menu-restaurant .menu .icon .border {
+  fill: transparent;
+  stroke: black;
+  opacity: 1;
+  transition: all 0.4s linear;
+}
+.menu-restaurant .menu .icon .fill {
+  transform: scale(0);
+  opacity: 0;
+  transform-origin: bottom center;
+  transition: all 0.4s linear;
+}
+.menu-restaurant .menu .icon:hover .fill {
+  transform: scale(1);
+  opacity: 1;
+}
+.menu-restaurant .menu .icon:hover .border {
+  stroke: transparent;
+  opacity: 0;
 }
 
+@media screen and (min-width: 430px) and (max-width: 800px) {
+  .menu-restaurant {
+    padding: 0px 20px 0px 20px;
+    margin-bottom: -70px;
+    padding-bottom: 70px;
+  }
+}
 .btn {
   border: none;
   height: 50px;
@@ -212,15 +286,14 @@
   font-size: 1.2em;
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   margin-top: 35px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
   transition: all 0.4s ease-in-out;
   cursor: pointer;
   padding-left: 50px;
   padding-right: 50px;
-  margin-top: 50px;
 }
 .btn:hover {
-  box-shadow: 0 2px 8px rgba(31, 30, 30, 0.7);
+  box-shadow: 0 2px 8px #1f1e1e;
   background: linear-gradient(175deg, #ff88de, #9b63df);
 }
 

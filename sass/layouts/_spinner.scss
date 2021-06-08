@@ -1,13 +1,16 @@
+
 .spinner {
     position: fixed;
+    left: -2px;
     width: 100%;
     height: 100%;
     background: $color-white;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 300;
-    animation:  fade-out 1s ease-in-out both;
+    z-index: 10;
+    animation:  fade-out 0.4s ease-in-out both;
+    animation-delay: 1.3s;
     
 
     @keyframes fade-out {
@@ -16,57 +19,43 @@
         }
     
         to {
-            opacity: 0.8;
+            opacity: 0;
             visibility: hidden;
         }
     }
 
     .circle {
-        width: 200px;
-        height: 200px;
-        box-sizing: border-box;
-        border-radius: 50%;
-        border-top: 10px solid $primary;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
         position: relative;
-        animation: circle 2s linear infinite;
+        margin: 0 auto;
         &::before, &::after {
-            content: '';
-            width: 200px;
-            height: 200px;
+            content: "";
             position: absolute;
-            left: 0;
-            top: -10px;
-            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            border: 7px solid transparent;
+            border-top-color: $tertiary;
         }
 
         &::before {
-            border-top: 10px solid $secondary;
-            transform: rotate(120deg);
+            border: 7px solid #ccc;
         }
         &::after {
-            border-top: 10px solid $tertiary;
-            transform: rotate(240deg);
+            z-index: 20;
+            animation: spin 1s infinite;
         }
-        span {
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            text-align: center;
-            line-height: 200px;
-            animation: circle2 2s linear infinite;
-           
-        }
-        @keyframes circle {
-            to {
+        @keyframes spin {
+            0%{
+            
+                transform: rotate(0deg);
+            }
+            
+            100%{
                 transform: rotate(360deg);
             }
         }
-        @keyframes circle2 {
-            to {
-                transform: rotate(-360deg);
-            }
-           
-        }
     }
-    
 }

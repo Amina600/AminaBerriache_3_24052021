@@ -1,0 +1,26 @@
+
+.fa-arrow-left {
+    font-size: 1.4em;
+    color: #353535;
+    position: absolute;
+    left: 35px;
+    bottom: 16px;
+}
+.image {
+    .img-restaurant {
+        width: 100%;
+        height: 310px;
+        object-fit: cover;
+        z-index: 2;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .image {
+        .img-restaurant {
+            
+            height: 500px;
+            
+        }
+    }
+}
