@@ -124,7 +124,7 @@ header img {
 
 /*Fonctionnement*/
 .selection {
-  padding: 35px;
+  padding: 27px;
 }
 .selection ul {
   display: flex;
@@ -203,10 +203,10 @@ header img {
   padding-bottom: 30px;
 }
 .background-restaurant h2 {
-  padding-left: 35px;
+  padding-left: 27px;
 }
 .background-restaurant .container-restaurants {
-  width: 94%;
+  width: 91%;
   margin: auto;
 }
 
