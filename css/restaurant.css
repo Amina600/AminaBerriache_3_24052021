@@ -45,7 +45,7 @@ h2 {
   font-size: 1.4em;
   color: #353535;
   position: absolute;
-  left: 35px;
+  left: 25px;
   bottom: 18px;
 }
 
@@ -67,7 +67,7 @@ h2 {
   align-items: center;
 }
 .articles-container article {
-  width: 343px;
+  width: 370px;
   padding: 15px;
 }
 .articles-container article h2 {
@@ -81,7 +81,7 @@ h2 {
   position: relative;
 }
 .articles-container article .card {
-  max-width: 343px;
+  max-width: 365px;
   position: relative;
   box-shadow: 2px 5px 5px #e6e6e6;
   overflow: hidden;
@@ -169,7 +169,7 @@ h2 {
   justify-content: space-between;
 }
 .articles-container article .card .dishes .dishes-name .info {
-  font-size: 0.95em;
+  font-size: 1em;
   margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
