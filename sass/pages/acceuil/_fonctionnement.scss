@@ -2,13 +2,17 @@
 
 .selection {
     padding: 35px;
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
 
     &-select {
-        
         background-color: $color-light-grey;
         padding-right: 4px;
         margin-bottom: 25px;
         border-radius: 25px;
+        padding-right: 5px;
         @include operation;
         @include box-shadow;
         position: relative;
@@ -47,30 +51,36 @@
             font-size: 1.3em;
             margin-right: 20px;
             margin-left: 30px;
-            
         }
-        
     } 
 }
-@media screen and (min-width: 800px) and (max-width: 1071px) {
+@media screen and (min-width: 760px) and (max-width: 1185px) {
+    
     .selection {
         
         &-select {
-            width: 47%;
-        } 
-    }
+            width: 350px;
+        }
+       
+        .select2 {
+            margin-left: 25%;
+        }
+        .select3 {
+            margin-left: 50%;
+        }
+    } 
 }
-@media screen and (min-width: 1072px)  {
-    
+
+@media screen and (min-width: 1186px)  {
     .selection {
         ul {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: row;
             margin: auto;
         }
         &-select {
-            width: 300px;
-            margin-right: 30px;
-        } 
+            width: 350px;
+            margin-right: 25px;
+        }
     }
 }

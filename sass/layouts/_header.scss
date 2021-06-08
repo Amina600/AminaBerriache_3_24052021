@@ -2,36 +2,12 @@ header {
     display: flex;
     justify-content: space-around;
     @include header-shadow;
-    height: 55px;
+    height: 60px;
     position: relative;
     z-index: 2;
     background: $color-white;
     img {
-        width: 32%;
+        width: 165px;
         margin: auto;
-    }
-}
-@media screen and ( min-width: 700px) and (max-width: 930px){
-    header {
-        img {
-            width: 20%;
-        }
-    }
-}
-
-@media screen and (min-width: 931px) and (max-width: 1440px) {
-    
-    header {
-        img {
-            width: 15%;
-        }
-    }
-}
-@media screen and (min-width: 1441px) {
-    header {
-        
-        img {
-            width: 14%;
-        }
     }
 }
