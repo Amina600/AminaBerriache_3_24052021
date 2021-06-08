@@ -54,30 +54,6 @@ header img {
   margin: auto;
 }
 
-/*@media screen and ( min-width: 700px) and (max-width: 930px){
-    header {
-        img {
-            width: 20%;
-        }
-    }
-}
-
-@media screen and (min-width: 931px) and (max-width: 1440px) {
-
-    header {
-        img {
-            width: 15%;
-        }
-    }
-}
-@media screen and (min-width: 1441px) {
-    header {
-
-        img {
-            width: 14%;
-        }
-    }
-}*/
 .search--box {
   display: flex;
   justify-content: center;
@@ -150,11 +126,15 @@ header img {
 .selection {
   padding: 35px;
 }
+.selection ul {
+  display: flex;
+  flex-direction: column;
+}
 .selection-select {
   background-color: #f6f6f6;
-  height: 70px;
   margin-bottom: 25px;
   border-radius: 25px;
+  padding-right: 5px;
   display: flex;
   align-items: center;
   height: 70px;
@@ -192,54 +172,31 @@ header img {
   margin-left: 30px;
 }
 
-@media screen and (min-width: 800px) and (max-width: 1023px) {
-  .selection ul {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-  }
+@media screen and (min-width: 760px) and (max-width: 1185px) {
   .selection-select {
-    width: 45%;
-    margin-right: 20px;
+    width: 350px;
+  }
+  .selection .select2 {
+    margin-left: 25%;
+  }
+  .selection .select3 {
+    margin-left: 50%;
   }
 }
-@media screen and (min-width: 930px) and (max-width: 1024px) {
+@media screen and (min-width: 1186px) {
   .selection ul {
     display: flex;
     flex-direction: row;
     margin: auto;
   }
   .selection-select {
-    width: 32%;
-    margin-right: 20px;
-  }
-}
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
-  .selection ul {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-  }
-  .selection-select {
-    width: 31%;
-    margin-right: 27px;
-  }
-}
-@media screen and (min-width: 1441px) {
-  .selection ul {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-  }
-  .selection-select {
-    width: 32%;
+    width: 350px;
     margin-right: 25px;
   }
 }
 .background-restaurant {
   background: #f6f6f6;
   width: 100%;
-  padding-top: 30px;
   padding-bottom: 30px;
 }
 .background-restaurant h2 {
@@ -369,9 +326,8 @@ footer {
   background: #353535;
 }
 footer .container {
+  padding: 30px;
   padding-top: 10px;
-  padding-bottom: 30px;
-  padding-left: 35px;
 }
 footer .container .title_logo {
   font-family: "Shrikhand", cursive;
@@ -379,21 +335,31 @@ footer .container .title_logo {
   color: white;
   border: none;
 }
-footer .container li {
+footer .container ul {
+  margin: 0;
+}
+footer .container ul li {
   line-height: 1.8em;
 }
-footer .container li a {
+footer .container ul li a {
   text-decoration: none;
   color: #fff;
 }
-footer .container li a .icon1_footer {
+footer .container ul li a .icon1_footer {
   padding-right: 10px;
 }
-footer .container li a .icon2_footer {
+footer .container ul li a .icon2_footer {
   font-size: 0.8em;
   padding-right: 8px;
 }
 
+@media screen and (min-width: 700px) {
+  footer .container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+  }
+}
 .spinner {
   position: fixed;
   left: -2px;

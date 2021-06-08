@@ -2,13 +2,16 @@
 
 .selection {
     padding: 35px;
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
 
     &-select {
-        
         background-color: $color-light-grey;
-        height: 70px;
         margin-bottom: 25px;
         border-radius: 25px;
+        padding-right: 5px;
         @include operation;
         @include box-shadow;
         position: relative;
@@ -49,22 +52,25 @@
         
     } 
 }
-@media screen and (min-width: 800px) and (max-width: 1023px) {
+
+@media screen and (min-width: 760px) and (max-width: 1185px) {
     
     .selection {
-        ul {
-            display: flex;
-            flex-direction: column;
-            margin: auto;
-        }
+        
         &-select {
-            width: 45%;
-            margin-right: 20px;
-        } 
-    }
+            width: 350px;
+        }
+       
+        .select2 {
+            margin-left: 25%;
+        }
+        .select3 {
+            margin-left: 50%;
+        }
+    } 
 }
-@media screen and (min-width: 930px) and (max-width: 1024px) {
-    
+
+@media screen and (min-width: 1186px)  {
     .selection {
         ul {
             display: flex;
@@ -72,34 +78,8 @@
             margin: auto;
         }
         &-select {
-            width: 32%;
-            margin-right: 20px;
-        } 
-    }
-}
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
-    .selection {
-        ul {
-            display: flex;
-            flex-direction: row;
-            margin: auto;
-        }
-        &-select {
-            width: 31%;
-            margin-right: 27px;
-        } 
-    }
-}
-@media screen and (min-width: 1441px) {
-    .selection {
-        ul {
-            display: flex;
-            flex-direction: row;
-            margin: auto;
-        }
-        &-select {
-            width: 32%;
+            width: 350px;
             margin-right: 25px;
-        } 
+        }
     }
 }

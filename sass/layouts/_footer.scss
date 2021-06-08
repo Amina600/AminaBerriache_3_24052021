@@ -1,27 +1,41 @@
 footer {
     background: $bg_footer;
     .container {
+        padding: 30px;
         padding-top: 10px;
-        padding-bottom: 30px;
-        padding-left: 35px;
+        
         .title_logo {
             font-family: 'Shrikhand', cursive;
             font-size: 1.5em;
             color: white;
             border: none;
-        } li {
-            line-height: 1.8em;
-            a {
-                text-decoration: none;
-                color: $color-white;
-                .icon1_footer {
-                    padding-right: 10px;
-
-                }.icon2_footer {
-                    font-size: 0.8em;
-                    padding-right: 8px;
-                }
-            }  
-        }   
+        } 
+        ul {
+            margin: 0;
+            li {
+                line-height: 1.8em;
+                a {
+                    text-decoration: none;
+                    color: $color-white;
+                    .icon1_footer {
+                        padding-right: 10px;
+    
+                    }.icon2_footer {
+                        font-size: 0.8em;
+                        padding-right: 8px;
+                    }
+                }  
+            }   
+        }
     }
+}
+@media screen and (min-width: 700px) {
+    footer{
+        .container {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-evenly
+        }
+    }
+    
 }
