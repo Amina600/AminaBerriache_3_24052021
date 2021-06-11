@@ -62,7 +62,19 @@
                 @include heart-fill;
             }
             .case-new {
-                @include case-new;
+                width: 85px;
+                height: 30px;
+                border-radius: 2px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: $tertiary;
+                color: darken($tertiary, 35%);
+                font-weight: 500;
+                font-size: 0.85em;
+                position: absolute;
+                top: 15px;
+                right: 15px;
             }
         } 
     }

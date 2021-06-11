@@ -23,16 +23,10 @@
     }
 }
 
-@mixin operation {
-    display: flex;
-    align-items: center;
-    height: 70px;
-    cursor: pointer;
-    
-}
 @mixin box-shadow {
     box-shadow: 2px 5px 5px #e6e6e6;
 }
+
 @mixin heart-fill {
     font-size: 1.6em;
     padding-right: 10px;
@@ -60,20 +54,4 @@
             opacity: 0;
         }
     }
-}
-
-@mixin case-new {
-    width: 85px;
-    height: 30px;
-    border-radius: 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: $tertiary;
-    color: darken($tertiary, 35%);
-    font-weight: 500;
-    font-size: 0.85em;
-    position: absolute;
-    top: 15px;
-    right: 15px;
 }
